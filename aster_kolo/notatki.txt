@@ -1,0 +1,9 @@
+Prêdkoœæ asteroidów:
+Asteroids.cpp linia 102
+Prêdkoœæ pocisków:
+Bullet.cpp linia 64
+Prêdkoœæ obracania siê statku:
+Engine.cpp linie 151 i 156
+Prêdkoœæ w pród statku
+Player.cpp linie 65 i 66 bezw³adnoœæ
+Player.cpp linie 103 i 104 prêdkoœæ pocz¹tkowa

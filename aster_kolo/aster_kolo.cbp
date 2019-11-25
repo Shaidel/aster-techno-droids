@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="aster_kolo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/aster_kolo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="$$(SFMLLibrariesStaticDebug)" />
+					<Add option="$$(SFMLDependencies)" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/aster_kolo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="$$(SFMLLibrariesStaticRelease)" />
+					<Add option="$$(SFMLDependencies)" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="SFMLDependencies" value="-lglu32 -lopengl32 -lfreetype -lwinmm -lgdi32 -lopenal32 -lflac -lvorbisenc -lvorbisfile -lvorbis -logg -lws2_32" />
+				<Variable name="SFMLDirectory" value="C:\SFML-2.5.1_TDM\" />
+				<Variable name="SFMLLibrariesDynamicDebug" value="-lsfml-graphics-d -lsfml-window-d -lsfml-audio-d -lsfml-network-d -lsfml-system-d" />
+				<Variable name="SFMLLibrariesDynamicRelease" value="-lsfml-graphics -lsfml-window -lsfml-audio -lsfml-network -lsfml-system" />
+				<Variable name="SFMLLibrariesStaticDebug" value="-lsfml-graphics-s-d -lsfml-window-s-d -lsfml-audio-s-d -lsfml-network-s-d -lsfml-system-s-d" />
+				<Variable name="SFMLLibrariesStaticRelease" value="-lsfml-graphics-s -lsfml-window-s -lsfml-audio-s -lsfml-network-s -lsfml-system-s" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="$$(SFMLDirectory)include" />
+		</Compiler>
+		<Linker>
+			<Add directory="$$(SFMLDirectory)lib" />
+		</Linker>
+		<Unit filename="Asteroids.cpp" />
+		<Unit filename="Asteroids.h" />
+		<Unit filename="Audio.cpp" />
+		<Unit filename="Audio.h" />
+		<Unit filename="Bullet.cpp" />
+		<Unit filename="Bullet.h" />
+		<Unit filename="Engine.cpp" />
+		<Unit filename="Engine.h" />
+		<Unit filename="Entity.cpp" />
+		<Unit filename="Entity.h" />
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
+		<Unit filename="_main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
